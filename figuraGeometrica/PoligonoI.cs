@@ -9,6 +9,10 @@ namespace figuraGeometrica
     class PoligonoI:figura
     {
         private float lado1;
+        public PoligonoI(float lado1)
+        {
+            Lado1=lado1;
+        }
         public override float area()
         {
             throw new NotImplementedException();
@@ -158,11 +162,11 @@ namespace figuraGeometrica
             }
             public override float area()
             {
-                return (Base1 * Base2) / 2;
+                return ((Base1 + Base2)+Altura) / 2;
             }
             public override float perimetro()
             {
-                return lado1 * 4;
+                return 2*Lado1*Base1*Base2;
             }
             public override float volumen()
             {

@@ -93,5 +93,17 @@
   <ItemGroup>
     <None Include="imagenes\fondo hd.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="imagenes\circulo.jpg" />
+    <Content Include="imagenes\cuadrado.jpg" />
+    <Content Include="imagenes\cubo.jpg" />
+    <Content Include="imagenes\esfera.png" />
+    <Content Include="imagenes\poligonoregular.png" />
+    <Content Include="imagenes\predeterminado.jpg" />
+    <Content Include="imagenes\prisma.png" />
+    <Content Include="imagenes\rectangulo.jpg" />
+    <Content Include="imagenes\trapecio.png" />
+    <Content Include="imagenes\triangulo.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

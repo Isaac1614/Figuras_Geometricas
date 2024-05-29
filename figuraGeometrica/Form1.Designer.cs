@@ -30,26 +30,26 @@ namespace figuraGeometrica
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.radioButtonCuadrado = new System.Windows.Forms.RadioButton();
-            this.radioButtonTriangulo = new System.Windows.Forms.RadioButton();
-            this.radioButtonRectangulo = new System.Windows.Forms.RadioButton();
-            this.radioButtonPoligonoR = new System.Windows.Forms.RadioButton();
-            this.radioButtonPoligonoI = new System.Windows.Forms.RadioButton();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonGuardar = new System.Windows.Forms.Button();
-            this.buttonInfo = new System.Windows.Forms.Button();
-            this.buttonDibujar = new System.Windows.Forms.Button();
-            this.buttonExportar = new System.Windows.Forms.Button();
-            this.radioButtonCirculo = new System.Windows.Forms.RadioButton();
-            this.radioButtonCubo = new System.Windows.Forms.RadioButton();
-            this.radioButtonPrisma = new System.Windows.Forms.RadioButton();
-            this.radioButtonEsfera = new System.Windows.Forms.RadioButton();
-            this.buttonLimpiar = new System.Windows.Forms.Button();
-            this.buttonCalcular = new System.Windows.Forms.Button();
-            this.infoText = new System.Windows.Forms.RichTextBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.infoText = new System.Windows.Forms.RichTextBox();
+            this.buttonCalcular = new System.Windows.Forms.Button();
+            this.buttonLimpiar = new System.Windows.Forms.Button();
+            this.radioButtonEsfera = new System.Windows.Forms.RadioButton();
+            this.radioButtonPrisma = new System.Windows.Forms.RadioButton();
+            this.radioButtonCubo = new System.Windows.Forms.RadioButton();
+            this.radioButtonCirculo = new System.Windows.Forms.RadioButton();
+            this.label1 = new System.Windows.Forms.Label();
+            this.buttonExportar = new System.Windows.Forms.Button();
+            this.buttonDibujar = new System.Windows.Forms.Button();
+            this.buttonInfo = new System.Windows.Forms.Button();
+            this.buttonGuardar = new System.Windows.Forms.Button();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.radioButtonPoligonoI = new System.Windows.Forms.RadioButton();
+            this.radioButtonPoligonoR = new System.Windows.Forms.RadioButton();
+            this.radioButtonRectangulo = new System.Windows.Forms.RadioButton();
+            this.radioButtonTriangulo = new System.Windows.Forms.RadioButton();
+            this.radioButtonCuadrado = new System.Windows.Forms.RadioButton();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -83,202 +83,31 @@ namespace figuraGeometrica
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
-            // label1
+            // label2
             // 
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(172, 16);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(358, 34);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Constructor de figuras geometricas";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(150, 324);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(186, 20);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Ingrese un lado de la figura";
             // 
-            // radioButtonCuadrado
+            // pictureBox1
             // 
-            this.radioButtonCuadrado.AutoSize = true;
-            this.radioButtonCuadrado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonCuadrado.Location = new System.Drawing.Point(30, 77);
-            this.radioButtonCuadrado.Name = "radioButtonCuadrado";
-            this.radioButtonCuadrado.Size = new System.Drawing.Size(71, 17);
-            this.radioButtonCuadrado.TabIndex = 0;
-            this.radioButtonCuadrado.Text = "Cuadrado";
-            this.radioButtonCuadrado.UseVisualStyleBackColor = true;
+            this.pictureBox1.Location = new System.Drawing.Point(154, 66);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(243, 226);
+            this.pictureBox1.TabIndex = 17;
+            this.pictureBox1.TabStop = false;
             // 
-            // radioButtonTriangulo
+            // infoText
             // 
-            this.radioButtonTriangulo.AutoSize = true;
-            this.radioButtonTriangulo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonTriangulo.Location = new System.Drawing.Point(30, 101);
-            this.radioButtonTriangulo.Name = "radioButtonTriangulo";
-            this.radioButtonTriangulo.Size = new System.Drawing.Size(69, 17);
-            this.radioButtonTriangulo.TabIndex = 1;
-            this.radioButtonTriangulo.Text = "Triángulo";
-            this.radioButtonTriangulo.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonRectangulo
-            // 
-            this.radioButtonRectangulo.AutoSize = true;
-            this.radioButtonRectangulo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonRectangulo.Location = new System.Drawing.Point(30, 125);
-            this.radioButtonRectangulo.Name = "radioButtonRectangulo";
-            this.radioButtonRectangulo.Size = new System.Drawing.Size(80, 17);
-            this.radioButtonRectangulo.TabIndex = 2;
-            this.radioButtonRectangulo.Text = "Rectángulo";
-            this.radioButtonRectangulo.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonPoligonoR
-            // 
-            this.radioButtonPoligonoR.AutoSize = true;
-            this.radioButtonPoligonoR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonPoligonoR.Location = new System.Drawing.Point(30, 149);
-            this.radioButtonPoligonoR.Name = "radioButtonPoligonoR";
-            this.radioButtonPoligonoR.Size = new System.Drawing.Size(101, 17);
-            this.radioButtonPoligonoR.TabIndex = 3;
-            this.radioButtonPoligonoR.Text = "Poligono regular";
-            this.radioButtonPoligonoR.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonPoligonoI
-            // 
-            this.radioButtonPoligonoI.AutoSize = true;
-            this.radioButtonPoligonoI.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonPoligonoI.Location = new System.Drawing.Point(30, 173);
-            this.radioButtonPoligonoI.Name = "radioButtonPoligonoI";
-            this.radioButtonPoligonoI.Size = new System.Drawing.Size(106, 17);
-            this.radioButtonPoligonoI.TabIndex = 4;
-            this.radioButtonPoligonoI.Text = "Poligono irregular";
-            this.radioButtonPoligonoI.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(424, 324);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 20);
-            this.textBox1.TabIndex = 5;
-            // 
-            // buttonGuardar
-            // 
-            this.buttonGuardar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonGuardar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonGuardar.FlatAppearance.BorderSize = 2;
-            this.buttonGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGuardar.Location = new System.Drawing.Point(48, 390);
-            this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(75, 33);
-            this.buttonGuardar.TabIndex = 6;
-            this.buttonGuardar.Text = "Guardar";
-            this.buttonGuardar.UseVisualStyleBackColor = false;
-            // 
-            // buttonInfo
-            // 
-            this.buttonInfo.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonInfo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonInfo.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonInfo.FlatAppearance.BorderSize = 2;
-            this.buttonInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfo.Location = new System.Drawing.Point(129, 390);
-            this.buttonInfo.Name = "buttonInfo";
-            this.buttonInfo.Size = new System.Drawing.Size(75, 33);
-            this.buttonInfo.TabIndex = 7;
-            this.buttonInfo.Text = "Información";
-            this.buttonInfo.UseVisualStyleBackColor = false;
-            // 
-            // buttonDibujar
-            // 
-            this.buttonDibujar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonDibujar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonDibujar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonDibujar.FlatAppearance.BorderSize = 2;
-            this.buttonDibujar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonDibujar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonDibujar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDibujar.Location = new System.Drawing.Point(210, 390);
-            this.buttonDibujar.Name = "buttonDibujar";
-            this.buttonDibujar.Size = new System.Drawing.Size(75, 33);
-            this.buttonDibujar.TabIndex = 8;
-            this.buttonDibujar.Text = "Dibujar";
-            this.buttonDibujar.UseVisualStyleBackColor = false;
-            // 
-            // buttonExportar
-            // 
-            this.buttonExportar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonExportar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonExportar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonExportar.FlatAppearance.BorderSize = 2;
-            this.buttonExportar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonExportar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExportar.Location = new System.Drawing.Point(291, 390);
-            this.buttonExportar.Name = "buttonExportar";
-            this.buttonExportar.Size = new System.Drawing.Size(75, 33);
-            this.buttonExportar.TabIndex = 9;
-            this.buttonExportar.Text = "Exportar";
-            this.buttonExportar.UseVisualStyleBackColor = false;
-            // 
-            // radioButtonCirculo
-            // 
-            this.radioButtonCirculo.AutoSize = true;
-            this.radioButtonCirculo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonCirculo.Location = new System.Drawing.Point(30, 197);
-            this.radioButtonCirculo.Name = "radioButtonCirculo";
-            this.radioButtonCirculo.Size = new System.Drawing.Size(59, 17);
-            this.radioButtonCirculo.TabIndex = 10;
-            this.radioButtonCirculo.Text = "Círculo";
-            this.radioButtonCirculo.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonCubo
-            // 
-            this.radioButtonCubo.AutoSize = true;
-            this.radioButtonCubo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonCubo.Location = new System.Drawing.Point(30, 221);
-            this.radioButtonCubo.Name = "radioButtonCubo";
-            this.radioButtonCubo.Size = new System.Drawing.Size(50, 17);
-            this.radioButtonCubo.TabIndex = 11;
-            this.radioButtonCubo.Text = "Cubo";
-            this.radioButtonCubo.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonPrisma
-            // 
-            this.radioButtonPrisma.AutoSize = true;
-            this.radioButtonPrisma.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonPrisma.Location = new System.Drawing.Point(30, 245);
-            this.radioButtonPrisma.Name = "radioButtonPrisma";
-            this.radioButtonPrisma.Size = new System.Drawing.Size(56, 17);
-            this.radioButtonPrisma.TabIndex = 12;
-            this.radioButtonPrisma.Text = "Prisma";
-            this.radioButtonPrisma.UseVisualStyleBackColor = true;
-            // 
-            // radioButtonEsfera
-            // 
-            this.radioButtonEsfera.AutoSize = true;
-            this.radioButtonEsfera.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonEsfera.Location = new System.Drawing.Point(30, 269);
-            this.radioButtonEsfera.Name = "radioButtonEsfera";
-            this.radioButtonEsfera.Size = new System.Drawing.Size(55, 17);
-            this.radioButtonEsfera.TabIndex = 13;
-            this.radioButtonEsfera.Text = "Esfera";
-            this.radioButtonEsfera.UseVisualStyleBackColor = true;
-            // 
-            // buttonLimpiar
-            // 
-            this.buttonLimpiar.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.buttonLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonLimpiar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.buttonLimpiar.FlatAppearance.BorderSize = 2;
-            this.buttonLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
-            this.buttonLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLimpiar.Location = new System.Drawing.Point(373, 390);
-            this.buttonLimpiar.Name = "buttonLimpiar";
-            this.buttonLimpiar.Size = new System.Drawing.Size(75, 32);
-            this.buttonLimpiar.TabIndex = 14;
-            this.buttonLimpiar.Text = "Limpiar";
-            this.buttonLimpiar.UseVisualStyleBackColor = false;
+            this.infoText.Location = new System.Drawing.Point(424, 66);
+            this.infoText.Name = "infoText";
+            this.infoText.Size = new System.Drawing.Size(231, 226);
+            this.infoText.TabIndex = 16;
+            this.infoText.Text = "";
             // 
             // buttonCalcular
             // 
@@ -296,31 +125,213 @@ namespace figuraGeometrica
             this.buttonCalcular.Text = "Calcular";
             this.buttonCalcular.UseVisualStyleBackColor = false;
             // 
-            // infoText
+            // buttonLimpiar
             // 
-            this.infoText.Location = new System.Drawing.Point(424, 66);
-            this.infoText.Name = "infoText";
-            this.infoText.Size = new System.Drawing.Size(231, 226);
-            this.infoText.TabIndex = 16;
-            this.infoText.Text = "";
+            this.buttonLimpiar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonLimpiar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonLimpiar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonLimpiar.FlatAppearance.BorderSize = 2;
+            this.buttonLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonLimpiar.Location = new System.Drawing.Point(373, 390);
+            this.buttonLimpiar.Name = "buttonLimpiar";
+            this.buttonLimpiar.Size = new System.Drawing.Size(75, 32);
+            this.buttonLimpiar.TabIndex = 14;
+            this.buttonLimpiar.Text = "Limpiar";
+            this.buttonLimpiar.UseVisualStyleBackColor = false;
+            this.buttonLimpiar.Click += new System.EventHandler(this.buttonLimpiar_Click);
             // 
-            // pictureBox1
+            // radioButtonEsfera
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(154, 66);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(243, 226);
-            this.pictureBox1.TabIndex = 17;
-            this.pictureBox1.TabStop = false;
+            this.radioButtonEsfera.AutoSize = true;
+            this.radioButtonEsfera.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonEsfera.Location = new System.Drawing.Point(30, 269);
+            this.radioButtonEsfera.Name = "radioButtonEsfera";
+            this.radioButtonEsfera.Size = new System.Drawing.Size(55, 17);
+            this.radioButtonEsfera.TabIndex = 13;
+            this.radioButtonEsfera.Text = "Esfera";
+            this.radioButtonEsfera.UseVisualStyleBackColor = true;
+            this.radioButtonEsfera.CheckedChanged += new System.EventHandler(this.radioButtonEsfera_CheckedChanged);
             // 
-            // label2
+            // radioButtonPrisma
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(150, 324);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 20);
-            this.label2.TabIndex = 18;
-            this.label2.Text = "Ingrese un lado de la figura";
+            this.radioButtonPrisma.AutoSize = true;
+            this.radioButtonPrisma.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonPrisma.Location = new System.Drawing.Point(30, 245);
+            this.radioButtonPrisma.Name = "radioButtonPrisma";
+            this.radioButtonPrisma.Size = new System.Drawing.Size(56, 17);
+            this.radioButtonPrisma.TabIndex = 12;
+            this.radioButtonPrisma.Text = "Prisma";
+            this.radioButtonPrisma.UseVisualStyleBackColor = true;
+            this.radioButtonPrisma.CheckedChanged += new System.EventHandler(this.radioButtonPrisma_CheckedChanged);
+            // 
+            // radioButtonCubo
+            // 
+            this.radioButtonCubo.AutoSize = true;
+            this.radioButtonCubo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonCubo.Location = new System.Drawing.Point(30, 221);
+            this.radioButtonCubo.Name = "radioButtonCubo";
+            this.radioButtonCubo.Size = new System.Drawing.Size(50, 17);
+            this.radioButtonCubo.TabIndex = 11;
+            this.radioButtonCubo.Text = "Cubo";
+            this.radioButtonCubo.UseVisualStyleBackColor = true;
+            this.radioButtonCubo.CheckedChanged += new System.EventHandler(this.radioButtonCubo_CheckedChanged);
+            // 
+            // radioButtonCirculo
+            // 
+            this.radioButtonCirculo.AutoSize = true;
+            this.radioButtonCirculo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonCirculo.Location = new System.Drawing.Point(30, 197);
+            this.radioButtonCirculo.Name = "radioButtonCirculo";
+            this.radioButtonCirculo.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonCirculo.TabIndex = 10;
+            this.radioButtonCirculo.Text = "Círculo";
+            this.radioButtonCirculo.UseVisualStyleBackColor = true;
+            this.radioButtonCirculo.CheckedChanged += new System.EventHandler(this.radioButtonCirculo_CheckedChanged);
+            // 
+            // label1
+            // 
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(172, 16);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(358, 34);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Constructor de figuras geometricas";
+            // 
+            // buttonExportar
+            // 
+            this.buttonExportar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonExportar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonExportar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonExportar.FlatAppearance.BorderSize = 2;
+            this.buttonExportar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonExportar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonExportar.Location = new System.Drawing.Point(291, 390);
+            this.buttonExportar.Name = "buttonExportar";
+            this.buttonExportar.Size = new System.Drawing.Size(75, 33);
+            this.buttonExportar.TabIndex = 9;
+            this.buttonExportar.Text = "Exportar";
+            this.buttonExportar.UseVisualStyleBackColor = false;
+            // 
+            // buttonDibujar
+            // 
+            this.buttonDibujar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonDibujar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonDibujar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonDibujar.FlatAppearance.BorderSize = 2;
+            this.buttonDibujar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonDibujar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonDibujar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonDibujar.Location = new System.Drawing.Point(210, 390);
+            this.buttonDibujar.Name = "buttonDibujar";
+            this.buttonDibujar.Size = new System.Drawing.Size(75, 33);
+            this.buttonDibujar.TabIndex = 8;
+            this.buttonDibujar.Text = "Dibujar";
+            this.buttonDibujar.UseVisualStyleBackColor = false;
+            this.buttonDibujar.Click += new System.EventHandler(this.buttonDibujar_Click);
+            // 
+            // buttonInfo
+            // 
+            this.buttonInfo.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonInfo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonInfo.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonInfo.FlatAppearance.BorderSize = 2;
+            this.buttonInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonInfo.Location = new System.Drawing.Point(129, 390);
+            this.buttonInfo.Name = "buttonInfo";
+            this.buttonInfo.Size = new System.Drawing.Size(75, 33);
+            this.buttonInfo.TabIndex = 7;
+            this.buttonInfo.Text = "Información";
+            this.buttonInfo.UseVisualStyleBackColor = false;
+            // 
+            // buttonGuardar
+            // 
+            this.buttonGuardar.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.buttonGuardar.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGuardar.FlatAppearance.BorderColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.buttonGuardar.FlatAppearance.BorderSize = 2;
+            this.buttonGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.buttonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonGuardar.Location = new System.Drawing.Point(48, 390);
+            this.buttonGuardar.Name = "buttonGuardar";
+            this.buttonGuardar.Size = new System.Drawing.Size(75, 33);
+            this.buttonGuardar.TabIndex = 6;
+            this.buttonGuardar.Text = "Guardar";
+            this.buttonGuardar.UseVisualStyleBackColor = false;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(424, 324);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(231, 20);
+            this.textBox1.TabIndex = 5;
+            // 
+            // radioButtonPoligonoI
+            // 
+            this.radioButtonPoligonoI.AutoSize = true;
+            this.radioButtonPoligonoI.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonPoligonoI.Location = new System.Drawing.Point(30, 173);
+            this.radioButtonPoligonoI.Name = "radioButtonPoligonoI";
+            this.radioButtonPoligonoI.Size = new System.Drawing.Size(106, 17);
+            this.radioButtonPoligonoI.TabIndex = 4;
+            this.radioButtonPoligonoI.Text = "Poligono irregular";
+            this.radioButtonPoligonoI.UseVisualStyleBackColor = true;
+            this.radioButtonPoligonoI.CheckedChanged += new System.EventHandler(this.radioButtonPoligonoI_CheckedChanged);
+            // 
+            // radioButtonPoligonoR
+            // 
+            this.radioButtonPoligonoR.AutoSize = true;
+            this.radioButtonPoligonoR.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonPoligonoR.Location = new System.Drawing.Point(30, 149);
+            this.radioButtonPoligonoR.Name = "radioButtonPoligonoR";
+            this.radioButtonPoligonoR.Size = new System.Drawing.Size(101, 17);
+            this.radioButtonPoligonoR.TabIndex = 3;
+            this.radioButtonPoligonoR.Text = "Poligono regular";
+            this.radioButtonPoligonoR.UseVisualStyleBackColor = true;
+            this.radioButtonPoligonoR.CheckedChanged += new System.EventHandler(this.radioButtonPoligonoR_CheckedChanged);
+            // 
+            // radioButtonRectangulo
+            // 
+            this.radioButtonRectangulo.AutoSize = true;
+            this.radioButtonRectangulo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonRectangulo.Location = new System.Drawing.Point(30, 125);
+            this.radioButtonRectangulo.Name = "radioButtonRectangulo";
+            this.radioButtonRectangulo.Size = new System.Drawing.Size(80, 17);
+            this.radioButtonRectangulo.TabIndex = 2;
+            this.radioButtonRectangulo.Text = "Rectángulo";
+            this.radioButtonRectangulo.UseVisualStyleBackColor = true;
+            this.radioButtonRectangulo.CheckedChanged += new System.EventHandler(this.radioButtonRectangulo_CheckedChanged);
+            // 
+            // radioButtonTriangulo
+            // 
+            this.radioButtonTriangulo.AutoSize = true;
+            this.radioButtonTriangulo.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonTriangulo.Location = new System.Drawing.Point(30, 101);
+            this.radioButtonTriangulo.Name = "radioButtonTriangulo";
+            this.radioButtonTriangulo.Size = new System.Drawing.Size(69, 17);
+            this.radioButtonTriangulo.TabIndex = 1;
+            this.radioButtonTriangulo.Text = "Triángulo";
+            this.radioButtonTriangulo.UseVisualStyleBackColor = true;
+            this.radioButtonTriangulo.CheckedChanged += new System.EventHandler(this.radioButtonTriangulo_CheckedChanged);
+            // 
+            // radioButtonCuadrado
+            // 
+            this.radioButtonCuadrado.AutoSize = true;
+            this.radioButtonCuadrado.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.radioButtonCuadrado.Location = new System.Drawing.Point(30, 77);
+            this.radioButtonCuadrado.Name = "radioButtonCuadrado";
+            this.radioButtonCuadrado.Size = new System.Drawing.Size(71, 17);
+            this.radioButtonCuadrado.TabIndex = 0;
+            this.radioButtonCuadrado.Text = "Cuadrado";
+            this.radioButtonCuadrado.UseVisualStyleBackColor = true;
+            this.radioButtonCuadrado.CheckedChanged += new System.EventHandler(this.radioButtonCuadrado_CheckedChanged);
             // 
             // Form1
             // 
@@ -333,6 +344,7 @@ namespace figuraGeometrica
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Figuras Geometricas";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

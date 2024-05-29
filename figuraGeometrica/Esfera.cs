@@ -22,7 +22,7 @@ namespace figuraGeometrica
         }
         public override float volumen()
         {
-           return 3/4*(3.1416f*(Lado1*Lado1*Lado1));
+           return (4*(3.1416f*(Lado1*Lado1*Lado1)))/3;
         }
     }
 }
