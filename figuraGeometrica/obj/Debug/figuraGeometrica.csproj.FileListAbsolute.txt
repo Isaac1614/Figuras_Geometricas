@@ -15,3 +15,6 @@ C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\D
 C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.csproj.CoreCompileInputs.cache
 C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.exe
 C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.pdb
+C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.exe.config
+C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.exe
+C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.pdb

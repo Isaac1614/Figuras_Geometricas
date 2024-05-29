@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace figuraGeometrica
 {
-    class PoligonoI:figura
+    class PoligonoI
     {
-        private float lado1;
+        /*private float lado1;
         public PoligonoI(float lado1)
         {
             Lado1=lado1;
@@ -172,7 +172,7 @@ namespace figuraGeometrica
             {
                 return base.volumen();
             }
-        }
+        }*/
        
     }
 }

@@ -56,7 +56,7 @@ namespace figuraGeometrica
             // 
             // groupBox1
             // 
-            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.BackColor = System.Drawing.Color.WhiteSmoke;
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.pictureBox1);
             this.groupBox1.Controls.Add(this.infoText);
@@ -79,23 +79,23 @@ namespace figuraGeometrica
             this.groupBox1.Controls.Add(this.radioButtonCuadrado);
             this.groupBox1.Location = new System.Drawing.Point(70, 57);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(668, 450);
+            this.groupBox1.Size = new System.Drawing.Size(719, 465);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Impact", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(150, 324);
+            this.label2.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(85, 324);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(186, 20);
+            this.label2.Size = new System.Drawing.Size(333, 34);
             this.label2.TabIndex = 18;
             this.label2.Text = "Ingrese un lado de la figura";
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(154, 66);
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Location = new System.Drawing.Point(175, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(243, 226);
             this.pictureBox1.TabIndex = 17;
@@ -103,7 +103,7 @@ namespace figuraGeometrica
             // 
             // infoText
             // 
-            this.infoText.Location = new System.Drawing.Point(424, 66);
+            this.infoText.Location = new System.Drawing.Point(443, 67);
             this.infoText.Name = "infoText";
             this.infoText.Size = new System.Drawing.Size(231, 226);
             this.infoText.TabIndex = 16;
@@ -118,9 +118,10 @@ namespace figuraGeometrica
             this.buttonCalcular.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonCalcular.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonCalcular.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonCalcular.Location = new System.Drawing.Point(455, 390);
+            this.buttonCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonCalcular.Location = new System.Drawing.Point(593, 387);
             this.buttonCalcular.Name = "buttonCalcular";
-            this.buttonCalcular.Size = new System.Drawing.Size(75, 31);
+            this.buttonCalcular.Size = new System.Drawing.Size(108, 55);
             this.buttonCalcular.TabIndex = 15;
             this.buttonCalcular.Text = "Calcular";
             this.buttonCalcular.UseVisualStyleBackColor = false;
@@ -134,9 +135,10 @@ namespace figuraGeometrica
             this.buttonLimpiar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonLimpiar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonLimpiar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonLimpiar.Location = new System.Drawing.Point(373, 390);
+            this.buttonLimpiar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonLimpiar.Location = new System.Drawing.Point(479, 387);
             this.buttonLimpiar.Name = "buttonLimpiar";
-            this.buttonLimpiar.Size = new System.Drawing.Size(75, 32);
+            this.buttonLimpiar.Size = new System.Drawing.Size(108, 56);
             this.buttonLimpiar.TabIndex = 14;
             this.buttonLimpiar.Text = "Limpiar";
             this.buttonLimpiar.UseVisualStyleBackColor = false;
@@ -146,9 +148,10 @@ namespace figuraGeometrica
             // 
             this.radioButtonEsfera.AutoSize = true;
             this.radioButtonEsfera.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonEsfera.Location = new System.Drawing.Point(30, 269);
+            this.radioButtonEsfera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonEsfera.Location = new System.Drawing.Point(30, 272);
             this.radioButtonEsfera.Name = "radioButtonEsfera";
-            this.radioButtonEsfera.Size = new System.Drawing.Size(55, 17);
+            this.radioButtonEsfera.Size = new System.Drawing.Size(64, 20);
             this.radioButtonEsfera.TabIndex = 13;
             this.radioButtonEsfera.Text = "Esfera";
             this.radioButtonEsfera.UseVisualStyleBackColor = true;
@@ -158,9 +161,10 @@ namespace figuraGeometrica
             // 
             this.radioButtonPrisma.AutoSize = true;
             this.radioButtonPrisma.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonPrisma.Location = new System.Drawing.Point(30, 245);
+            this.radioButtonPrisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonPrisma.Location = new System.Drawing.Point(30, 248);
             this.radioButtonPrisma.Name = "radioButtonPrisma";
-            this.radioButtonPrisma.Size = new System.Drawing.Size(56, 17);
+            this.radioButtonPrisma.Size = new System.Drawing.Size(67, 20);
             this.radioButtonPrisma.TabIndex = 12;
             this.radioButtonPrisma.Text = "Prisma";
             this.radioButtonPrisma.UseVisualStyleBackColor = true;
@@ -170,9 +174,10 @@ namespace figuraGeometrica
             // 
             this.radioButtonCubo.AutoSize = true;
             this.radioButtonCubo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonCubo.Location = new System.Drawing.Point(30, 221);
+            this.radioButtonCubo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonCubo.Location = new System.Drawing.Point(30, 222);
             this.radioButtonCubo.Name = "radioButtonCubo";
-            this.radioButtonCubo.Size = new System.Drawing.Size(50, 17);
+            this.radioButtonCubo.Size = new System.Drawing.Size(57, 20);
             this.radioButtonCubo.TabIndex = 11;
             this.radioButtonCubo.Text = "Cubo";
             this.radioButtonCubo.UseVisualStyleBackColor = true;
@@ -182,9 +187,10 @@ namespace figuraGeometrica
             // 
             this.radioButtonCirculo.AutoSize = true;
             this.radioButtonCirculo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonCirculo.Location = new System.Drawing.Point(30, 197);
+            this.radioButtonCirculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonCirculo.Location = new System.Drawing.Point(30, 196);
             this.radioButtonCirculo.Name = "radioButtonCirculo";
-            this.radioButtonCirculo.Size = new System.Drawing.Size(59, 17);
+            this.radioButtonCirculo.Size = new System.Drawing.Size(66, 20);
             this.radioButtonCirculo.TabIndex = 10;
             this.radioButtonCirculo.Text = "Círculo";
             this.radioButtonCirculo.UseVisualStyleBackColor = true;
@@ -193,11 +199,11 @@ namespace figuraGeometrica
             // label1
             // 
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Impact", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Impact", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(172, 16);
+            this.label1.Location = new System.Drawing.Point(131, 16);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(358, 34);
+            this.label1.Size = new System.Drawing.Size(496, 34);
             this.label1.TabIndex = 1;
             this.label1.Text = "Constructor de figuras geometricas";
             // 
@@ -210,9 +216,10 @@ namespace figuraGeometrica
             this.buttonExportar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonExportar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonExportar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonExportar.Location = new System.Drawing.Point(291, 390);
+            this.buttonExportar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonExportar.Location = new System.Drawing.Point(365, 387);
             this.buttonExportar.Name = "buttonExportar";
-            this.buttonExportar.Size = new System.Drawing.Size(75, 33);
+            this.buttonExportar.Size = new System.Drawing.Size(108, 57);
             this.buttonExportar.TabIndex = 9;
             this.buttonExportar.Text = "Exportar";
             this.buttonExportar.UseVisualStyleBackColor = false;
@@ -226,9 +233,10 @@ namespace figuraGeometrica
             this.buttonDibujar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonDibujar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonDibujar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonDibujar.Location = new System.Drawing.Point(210, 390);
+            this.buttonDibujar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonDibujar.Location = new System.Drawing.Point(251, 387);
             this.buttonDibujar.Name = "buttonDibujar";
-            this.buttonDibujar.Size = new System.Drawing.Size(75, 33);
+            this.buttonDibujar.Size = new System.Drawing.Size(108, 57);
             this.buttonDibujar.TabIndex = 8;
             this.buttonDibujar.Text = "Dibujar";
             this.buttonDibujar.UseVisualStyleBackColor = false;
@@ -243,9 +251,10 @@ namespace figuraGeometrica
             this.buttonInfo.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonInfo.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonInfo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonInfo.Location = new System.Drawing.Point(129, 390);
+            this.buttonInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonInfo.Location = new System.Drawing.Point(137, 387);
             this.buttonInfo.Name = "buttonInfo";
-            this.buttonInfo.Size = new System.Drawing.Size(75, 33);
+            this.buttonInfo.Size = new System.Drawing.Size(108, 57);
             this.buttonInfo.TabIndex = 7;
             this.buttonInfo.Text = "Información";
             this.buttonInfo.UseVisualStyleBackColor = false;
@@ -259,27 +268,30 @@ namespace figuraGeometrica
             this.buttonGuardar.FlatAppearance.MouseDownBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonGuardar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.buttonGuardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.buttonGuardar.Location = new System.Drawing.Point(48, 390);
+            this.buttonGuardar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonGuardar.Location = new System.Drawing.Point(23, 387);
             this.buttonGuardar.Name = "buttonGuardar";
-            this.buttonGuardar.Size = new System.Drawing.Size(75, 33);
+            this.buttonGuardar.Size = new System.Drawing.Size(108, 57);
             this.buttonGuardar.TabIndex = 6;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox1.Location = new System.Drawing.Point(424, 324);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(231, 20);
+            this.textBox1.Size = new System.Drawing.Size(231, 29);
             this.textBox1.TabIndex = 5;
             // 
             // radioButtonPoligonoI
             // 
             this.radioButtonPoligonoI.AutoSize = true;
             this.radioButtonPoligonoI.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonPoligonoI.Location = new System.Drawing.Point(30, 173);
+            this.radioButtonPoligonoI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonPoligonoI.Location = new System.Drawing.Point(30, 170);
             this.radioButtonPoligonoI.Name = "radioButtonPoligonoI";
-            this.radioButtonPoligonoI.Size = new System.Drawing.Size(106, 17);
+            this.radioButtonPoligonoI.Size = new System.Drawing.Size(131, 20);
             this.radioButtonPoligonoI.TabIndex = 4;
             this.radioButtonPoligonoI.Text = "Poligono irregular";
             this.radioButtonPoligonoI.UseVisualStyleBackColor = true;
@@ -289,9 +301,10 @@ namespace figuraGeometrica
             // 
             this.radioButtonPoligonoR.AutoSize = true;
             this.radioButtonPoligonoR.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonPoligonoR.Location = new System.Drawing.Point(30, 149);
+            this.radioButtonPoligonoR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonPoligonoR.Location = new System.Drawing.Point(30, 144);
             this.radioButtonPoligonoR.Name = "radioButtonPoligonoR";
-            this.radioButtonPoligonoR.Size = new System.Drawing.Size(101, 17);
+            this.radioButtonPoligonoR.Size = new System.Drawing.Size(124, 20);
             this.radioButtonPoligonoR.TabIndex = 3;
             this.radioButtonPoligonoR.Text = "Poligono regular";
             this.radioButtonPoligonoR.UseVisualStyleBackColor = true;
@@ -301,9 +314,10 @@ namespace figuraGeometrica
             // 
             this.radioButtonRectangulo.AutoSize = true;
             this.radioButtonRectangulo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonRectangulo.Location = new System.Drawing.Point(30, 125);
+            this.radioButtonRectangulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonRectangulo.Location = new System.Drawing.Point(30, 118);
             this.radioButtonRectangulo.Name = "radioButtonRectangulo";
-            this.radioButtonRectangulo.Size = new System.Drawing.Size(80, 17);
+            this.radioButtonRectangulo.Size = new System.Drawing.Size(94, 20);
             this.radioButtonRectangulo.TabIndex = 2;
             this.radioButtonRectangulo.Text = "Rectángulo";
             this.radioButtonRectangulo.UseVisualStyleBackColor = true;
@@ -313,9 +327,10 @@ namespace figuraGeometrica
             // 
             this.radioButtonTriangulo.AutoSize = true;
             this.radioButtonTriangulo.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonTriangulo.Location = new System.Drawing.Point(30, 101);
+            this.radioButtonTriangulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonTriangulo.Location = new System.Drawing.Point(30, 92);
             this.radioButtonTriangulo.Name = "radioButtonTriangulo";
-            this.radioButtonTriangulo.Size = new System.Drawing.Size(69, 17);
+            this.radioButtonTriangulo.Size = new System.Drawing.Size(82, 20);
             this.radioButtonTriangulo.TabIndex = 1;
             this.radioButtonTriangulo.Text = "Triángulo";
             this.radioButtonTriangulo.UseVisualStyleBackColor = true;
@@ -325,9 +340,10 @@ namespace figuraGeometrica
             // 
             this.radioButtonCuadrado.AutoSize = true;
             this.radioButtonCuadrado.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.radioButtonCuadrado.Location = new System.Drawing.Point(30, 77);
+            this.radioButtonCuadrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButtonCuadrado.Location = new System.Drawing.Point(30, 66);
             this.radioButtonCuadrado.Name = "radioButtonCuadrado";
-            this.radioButtonCuadrado.Size = new System.Drawing.Size(71, 17);
+            this.radioButtonCuadrado.Size = new System.Drawing.Size(85, 20);
             this.radioButtonCuadrado.TabIndex = 0;
             this.radioButtonCuadrado.Text = "Cuadrado";
             this.radioButtonCuadrado.UseVisualStyleBackColor = true;
@@ -339,7 +355,7 @@ namespace figuraGeometrica
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::figuraGeometrica.Properties.Resources.fondo_hd;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(791, 576);
+            this.ClientSize = new System.Drawing.Size(839, 578);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -19,8 +19,7 @@ namespace figuraGeometrica
 
         private void radioButtonCuadrado_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\cuadrado.jpg";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -31,50 +30,42 @@ namespace figuraGeometrica
 
         private void radioButtonTriangulo_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\triangulo.jpg";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+
         }
 
         private void radioButtonRectangulo_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\rectangulo.jpg";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+
         }
 
         private void radioButtonPoligonoR_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\poligonoregular.png";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+
         }
 
         private void radioButtonPoligonoI_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\trapecio.png";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+
         }
 
         private void radioButtonCirculo_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\circulo.jpg";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+
         }
 
         private void radioButtonCubo_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\cubo.jpg";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+
         }
 
         private void radioButtonPrisma_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\prisma.png";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+
         }
 
         private void radioButtonEsfera_CheckedChanged(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\esfera.png";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+ 
         }
 
         private void buttonLimpiar_Click(object sender, EventArgs e)
@@ -86,7 +77,72 @@ namespace figuraGeometrica
         {
             if (radioButtonCirculo.Checked)
             {
-                
+                string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\circulo.jpg";
+                pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+            }
+            else
+            {
+                if (radioButtonCuadrado.Checked)
+                {
+                    string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\cuadrado.jpg";
+                    pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                }
+                else
+                {
+                    if (radioButtonCubo.Checked)
+                    {
+                        string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\cubo.jpg";
+                        pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                    }
+                    else
+                    {
+                        if (radioButtonEsfera.Checked)
+                        {
+                            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\esfera.png";
+                            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                        }
+                        else
+                        {
+                            if (radioButtonPoligonoI.Checked)
+                            {
+                                string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\trapecio.png";
+                                pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                            }
+                            else
+                            {
+                                if (radioButtonPoligonoR.Checked)
+                                {
+                                    string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\poligonoregular.png";
+                                    pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                                }
+                                else
+                                {
+                                    if (radioButtonPrisma.Checked)
+                                    {
+                                        string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\prisma.png";
+                                        pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                                    }
+                                    else
+                                    {
+                                        if (radioButtonRectangulo.Checked)
+                                        {
+                                            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\rectangulo.jpg";
+                                            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                                        }
+                                        else
+                                        {
+                                            if (radioButtonTriangulo.Checked)
+                                            {
+                                                string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\triangulo.jpg";
+                                                pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
             }
         }
     }
