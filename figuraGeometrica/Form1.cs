@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace figuraGeometrica
 {
@@ -144,6 +145,93 @@ namespace figuraGeometrica
                     }
                 }
             }
+        }
+
+        private void buttonExportar_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog exportar = new SaveFileDialog();
+            exportar.Filter = "Documento de texto|*.txt";
+            exportar.Title = "Guardar";
+            exportar.FileName = "Sin título 1";
+            var resultado = exportar.ShowDialog();
+            if (resultado==DialogResult.OK)
+            {
+                StreamWriter escribir = new StreamWriter(exportar.FileName);
+                foreach (object line in infoText.Lines)
+                {
+                    escribir.WriteLine(line);
+                }
+                escribir.Close();
+            }
+        }
+
+        private void buttonInfo_Click(object sender, EventArgs e)
+        {
+            if (radioButtonCirculo.Checked)
+            {
+                infoText.Text = "El círculo es una figura geométrica que se realiza trazando una curva que está siempre a la misma distancia de un punto que llamamos centro";
+            }
+            else
+            {
+                if (radioButtonCuadrado.Checked)
+                {
+                    infoText.Text = "El cuadrado es una figura geométrica que pertenece a los paralelogramos porque tiene 4 lados. Los 4 lados miden lo mismo y son paralelos dos a dos. ¿Esto que quiere decir? Que tiene 2 lados paralelos entre sí, y los otros 2 también son paralelos entre sí.";
+                }
+                else
+                {
+                    if (radioButtonCubo.Checked)
+                    {
+                        infoText.Text = "En la geometría, un cubo es un cuerpo formado por seis caras que son cuadradas. La particularidad de estos cuerpos es que todas las caras son congruentes, están dispuestas de forma paralela y de a pares, y tienen cuatro lados.";
+                    }
+                    else
+                    {
+                        if (radioButtonEsfera.Checked)
+                        {
+                            infoText.Text = "En geometría, una superficie esférica es una superficie de revolución formada por el conjunto de todos los puntos del espacio que equidistan de un punto llamado centro. ";
+                        }
+                        else
+                        {
+                            if (radioButtonPoligonoI.Checked)
+                            {
+                                infoText.Text = "Un polígono irregular es aquella figura geométrica que no cumple con la condición de regularidad. Es decir, no se cumple que todos sus lados tengan la misma longitud ni tampoco sus ángulos interiores comparten la misma medida.";
+                            }
+                            else
+                            {
+                                if (radioButtonPoligonoR.Checked)
+                                {
+                                    infoText.Text = "Polígono regular: Aquellos que tienen todos sus lados de igual longitud y todos sus ángulos internos iguales, es decir, son simultáneamente equiláteros y equiangulares.";
+                                }
+                                else
+                                {
+                                    if (radioButtonPrisma.Checked)
+                                    {
+                                        infoText.Text = "Cuerpo limitado por dos polígonos planos, paralelos e iguales, que se llaman bases, y por tantos paralelogramos cuantos lados tengan dichas bases, las cuales, según su forma, dan nombre al prisma: triangular, pentagonal, etcétera.";
+                                    }
+                                    else
+                                    {
+                                        if (radioButtonRectangulo.Checked)
+                                        {
+                                            infoText.Text = "El rectángulo es un cuadrilátero, específicamente un paralelogramo, que tiene dos pares de lados de igual longitud. A su vez, todos los ángulos interiores son rectos, es decir, miden 90º.";
+                                        }
+                                        else
+                                        {
+                                            if (radioButtonTriangulo.Checked)
+                                            {
+                                                infoText.Text = "El triángulo es un polígono conformado por tres lados, así como por tres vértices y tres ángulos interiores.";
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        private void buttonGuardar_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Datos guardados","Guardar",MessageBoxButtons.OK,MessageBoxIcon.Information);
         }
     }
 }

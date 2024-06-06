@@ -103,6 +103,7 @@ namespace figuraGeometrica
             // 
             // infoText
             // 
+            this.infoText.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.infoText.Location = new System.Drawing.Point(443, 67);
             this.infoText.Name = "infoText";
             this.infoText.Size = new System.Drawing.Size(231, 226);
@@ -223,6 +224,7 @@ namespace figuraGeometrica
             this.buttonExportar.TabIndex = 9;
             this.buttonExportar.Text = "Exportar";
             this.buttonExportar.UseVisualStyleBackColor = false;
+            this.buttonExportar.Click += new System.EventHandler(this.buttonExportar_Click);
             // 
             // buttonDibujar
             // 
@@ -258,6 +260,7 @@ namespace figuraGeometrica
             this.buttonInfo.TabIndex = 7;
             this.buttonInfo.Text = "Información";
             this.buttonInfo.UseVisualStyleBackColor = false;
+            this.buttonInfo.Click += new System.EventHandler(this.buttonInfo_Click);
             // 
             // buttonGuardar
             // 
@@ -275,6 +278,7 @@ namespace figuraGeometrica
             this.buttonGuardar.TabIndex = 6;
             this.buttonGuardar.Text = "Guardar";
             this.buttonGuardar.UseVisualStyleBackColor = false;
+            this.buttonGuardar.Click += new System.EventHandler(this.buttonGuardar_Click);
             // 
             // textBox1
             // 
