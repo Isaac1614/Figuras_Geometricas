@@ -105,5 +105,8 @@
     <Content Include="imagenes\trapecio.png" />
     <Content Include="imagenes\triangulo.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Datos\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

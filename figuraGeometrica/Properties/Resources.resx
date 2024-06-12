@@ -118,7 +118,40 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="prisma" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\prisma.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="esfera" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\esfera.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="poligonoregular" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\poligonoregular.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="fondo hd" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\fondo hd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="circulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\circulo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="triangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\triangulo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="predeterminado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\predeterminado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="trapecio" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\trapecio.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cubo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\cubo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cuadrado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\cuadrado.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rectangulo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\imagenes\rectangulo.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="fondo hd1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\imagenes\fondo hd.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

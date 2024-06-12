@@ -25,8 +25,7 @@ namespace figuraGeometrica
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\predeterminado.jpg";
-            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+            pictureBox1.Image = (figuraGeometrica.Properties.Resources.predeterminado);
         }
 
         private void radioButtonTriangulo_CheckedChanged(object sender, EventArgs e)
@@ -72,84 +71,76 @@ namespace figuraGeometrica
         private void buttonLimpiar_Click(object sender, EventArgs e)
         {
             textBox1.Clear();
+            infoText.Clear();
+            radioButtonCirculo.Checked = false;
+            radioButtonCuadrado.Checked = false;
+            radioButtonCubo.Checked = false;
+            radioButtonEsfera.Checked = false;
+            radioButtonPoligonoI.Checked = false;
+            radioButtonPoligonoR.Checked = false;
+            radioButtonPrisma.Checked = false;
+            radioButtonRectangulo.Checked = false;
+            radioButtonTriangulo.Checked = false;
         }
 
         private void buttonDibujar_Click(object sender, EventArgs e)
         {
             if (radioButtonCirculo.Checked)
             {
-                string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\circulo.jpg";
-                pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.circulo);
+                //pictureBox1.BackgroundImageLayout = ImageLayout.Center;
             }
-            else
+            else if (radioButtonCuadrado.Checked)
             {
-                if (radioButtonCuadrado.Checked)
-                {
-                    string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\cuadrado.jpg";
-                    pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
-                }
-                else
-                {
-                    if (radioButtonCubo.Checked)
-                    {
-                        string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\cubo.jpg";
-                        pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
-                    }
-                    else
-                    {
-                        if (radioButtonEsfera.Checked)
-                        {
-                            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\esfera.png";
-                            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
-                        }
-                        else
-                        {
-                            if (radioButtonPoligonoI.Checked)
-                            {
-                                string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\trapecio.png";
-                                pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
-                            }
-                            else
-                            {
-                                if (radioButtonPoligonoR.Checked)
-                                {
-                                    string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\poligonoregular.png";
-                                    pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
-                                }
-                                else
-                                {
-                                    if (radioButtonPrisma.Checked)
-                                    {
-                                        string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\prisma.png";
-                                        pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
-                                    }
-                                    else
-                                    {
-                                        if (radioButtonRectangulo.Checked)
-                                        {
-                                            string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\rectangulo.jpg";
-                                            pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
-                                        }
-                                        else
-                                        {
-                                            if (radioButtonTriangulo.Checked)
-                                            {
-                                                string rutaImagen = "C:\\Users\\arsek\\Source\\Repos\\Isaac1614\\Figuras_Geometricas\\figuraGeometrica\\imagenes\\triangulo.jpg";
-                                                pictureBox1.BackgroundImage = Image.FromFile(rutaImagen);
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.cuadrado);
+            }
+            else if (radioButtonCubo.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.cubo);
+            }
+            else if (radioButtonEsfera.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.esfera);
+            }
+            else if (radioButtonPoligonoI.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.trapecio);
+            }
+            else if (radioButtonPoligonoR.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.poligonoregular);
+            }
+            else if (radioButtonPrisma.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.prisma);
+            }
+            else if (radioButtonRectangulo.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.rectangulo);
+            }
+            else if (radioButtonTriangulo.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.triangulo);
             }
         }
 
         private void buttonExportar_Click(object sender, EventArgs e)
         {
-            SaveFileDialog exportar = new SaveFileDialog();
+            try //EXCEPCIÓN
+            {
+                string fileName = @"C:\Users\arsek\source\repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\Datos\info.txt";
+                // esto inserta texto en un archivo existente, si el archivo no existe lo crea
+                StreamWriter writer = File.AppendText(fileName);
+                //  writer.WriteLine("Este es un dato nuevo desde guardar");
+                writer.WriteLine("Datos: " + textBox1.Text);
+                writer.WriteLine("\n");
+                writer.Close();
+            }
+            catch
+            {
+                MessageBox.Show("Error al guardar Datos en el Archivo", "ERROR 404",MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            /*SaveFileDialog exportar = new SaveFileDialog();
             exportar.Filter = "Documento de texto|*.txt";
             exportar.Title = "Guardar";
             exportar.FileName = "Sin título 1";
@@ -162,76 +153,115 @@ namespace figuraGeometrica
                     escribir.WriteLine(line);
                 }
                 escribir.Close();
-            }
+            }*/
         }
 
         private void buttonInfo_Click(object sender, EventArgs e)
         {
             if (radioButtonCirculo.Checked)
             {
-                infoText.Text = "El círculo es una figura geométrica que se realiza trazando una curva que está siempre a la misma distancia de un punto que llamamos centro";
+                infoText.Text = "Figura seleccionada: Circulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
             }
-            else
+            else if (radioButtonCuadrado.Checked)
             {
-                if (radioButtonCuadrado.Checked)
-                {
-                    infoText.Text = "El cuadrado es una figura geométrica que pertenece a los paralelogramos porque tiene 4 lados. Los 4 lados miden lo mismo y son paralelos dos a dos. ¿Esto que quiere decir? Que tiene 2 lados paralelos entre sí, y los otros 2 también son paralelos entre sí.";
-                }
-                else
-                {
-                    if (radioButtonCubo.Checked)
-                    {
-                        infoText.Text = "En la geometría, un cubo es un cuerpo formado por seis caras que son cuadradas. La particularidad de estos cuerpos es que todas las caras son congruentes, están dispuestas de forma paralela y de a pares, y tienen cuatro lados.";
-                    }
-                    else
-                    {
-                        if (radioButtonEsfera.Checked)
-                        {
-                            infoText.Text = "En geometría, una superficie esférica es una superficie de revolución formada por el conjunto de todos los puntos del espacio que equidistan de un punto llamado centro. ";
-                        }
-                        else
-                        {
-                            if (radioButtonPoligonoI.Checked)
-                            {
-                                infoText.Text = "Un polígono irregular es aquella figura geométrica que no cumple con la condición de regularidad. Es decir, no se cumple que todos sus lados tengan la misma longitud ni tampoco sus ángulos interiores comparten la misma medida.";
-                            }
-                            else
-                            {
-                                if (radioButtonPoligonoR.Checked)
-                                {
-                                    infoText.Text = "Polígono regular: Aquellos que tienen todos sus lados de igual longitud y todos sus ángulos internos iguales, es decir, son simultáneamente equiláteros y equiangulares.";
-                                }
-                                else
-                                {
-                                    if (radioButtonPrisma.Checked)
-                                    {
-                                        infoText.Text = "Cuerpo limitado por dos polígonos planos, paralelos e iguales, que se llaman bases, y por tantos paralelogramos cuantos lados tengan dichas bases, las cuales, según su forma, dan nombre al prisma: triangular, pentagonal, etcétera.";
-                                    }
-                                    else
-                                    {
-                                        if (radioButtonRectangulo.Checked)
-                                        {
-                                            infoText.Text = "El rectángulo es un cuadrilátero, específicamente un paralelogramo, que tiene dos pares de lados de igual longitud. A su vez, todos los ángulos interiores son rectos, es decir, miden 90º.";
-                                        }
-                                        else
-                                        {
-                                            if (radioButtonTriangulo.Checked)
-                                            {
-                                                infoText.Text = "El triángulo es un polígono conformado por tres lados, así como por tres vértices y tres ángulos interiores.";
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+                infoText.Text = "Figura seleccionada: Cuadrado, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: "+ textBox1.Text;
+            }
+            else if (radioButtonCubo.Checked)
+            {
+                infoText.Text = "Figura seleccionada: Cubo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+            }
+            else if (radioButtonEsfera.Checked)
+            {
+                infoText.Text = "Figura seleccionada: Esfera, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+            }
+            else if (radioButtonPoligonoI.Checked)
+            {
+                infoText.Text = "Figura seleccionada: Poligono Irregular, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+            }
+            else if (radioButtonPoligonoR.Checked)
+            {
+                infoText.Text = "Figura seleccionada: Poligono Regular, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+            }
+            else if (radioButtonPrisma.Checked)
+            {
+                infoText.Text = "Figura seleccionada: Prisma, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+            }
+            else if (radioButtonRectangulo.Checked)
+            {
+                infoText.Text = "Figura seleccionada: Rectangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+            }
+            else if (radioButtonTriangulo.Checked)
+            {
+                infoText.Text = "Figura seleccionada: Triangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
             }
         }
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Datos guardados","Guardar",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            MessageBox.Show("Datos guardados "+ textBox1.Text,"Guardar",MessageBoxButtons.OK,MessageBoxIcon.Information);
+        }
+
+        private void buttonCalcular_Click(object sender, EventArgs e)
+        {
+            if (radioButtonCirculo.Checked)
+            {
+                float rad1 = float.Parse(textBox1.Text);
+                Circulo circulo = new Circulo(rad1);
+                infoText.Text = infoText.Text + "\n" + "Area = "+ circulo.area() + "\n" + "Perimetro = "+circulo.perimetro() + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
+            }
+            else if (radioButtonCuadrado.Checked)
+            {
+                float lad1 = float.Parse(textBox1.Text);
+                Cuadrado cuadrado = new Cuadrado(lad1);
+                infoText.Text = infoText.Text + "\n" + "Area = " + cuadrado.area()  + "\n" + "Perimetro = "+ cuadrado.perimetro() + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
+            }
+            else if (radioButtonCubo.Checked)
+            {
+                float lad1 = float.Parse(textBox1.Text);
+                Cubo cubo = new Cubo(lad1);
+                infoText.Text = infoText.Text + "\n" + "Area = "+ cubo.area() + "\n" + "Perimetro = "+ cubo.perimetro() + "\n" + "Volumen = "+ cubo.volumen() + "\n";
+            }
+            else if (radioButtonEsfera.Checked)
+            {
+                float rad1 = float.Parse(textBox1.Text);
+                Esfera esfera = new Esfera(rad1);
+                infoText.Text = infoText.Text+ "\n" + "Area = " +esfera.area()+ "\n" + "Perimetro = Noaplica " + "\n" + "Volumen= "+ esfera.volumen() + "\n";
+            }
+            else if (radioButtonPoligonoI.Checked)
+            {
+                infoText.Text = infoText.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
+            }
+            else if (radioButtonPoligonoR.Checked)
+            {
+                infoText.Text = infoText.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
+            }
+            else if (radioButtonPrisma.Checked)
+            {
+                float lad1= float.Parse(textBox1.Text);
+                float lad2 = float.Parse(textBox1.Text);
+                float lad3 = float.Parse(textBox1.Text);
+                Prisma prisma = new Prisma(lad1,lad2,lad3);
+                infoText.Text = infoText.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen= " + "\n";
+            }
+            else if (radioButtonRectangulo.Checked)
+            {
+                float alt1 = float.Parse(textBox1.Text);
+                float bas1 = float.Parse(textBox1.Text);
+                Rectangulo rectangulo = new Rectangulo(bas1,alt1);
+                infoText.Text = infoText.Text + "\n" + "Area = " + "\n"+ rectangulo.area() + "Perimetro = "+ rectangulo.perimetro() + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
+            }
+            else if (radioButtonTriangulo.Checked)
+            {
+                float alt1 = float.Parse(textBox1.Text);
+                float bas1 = float.Parse(textBox1.Text);
+                Triangulo triangulo = new Triangulo(bas1, alt1);
+                infoText.Text = infoText.Text + "\n" + "Area = "+ triangulo.area() + "\n" + "Perimetro = "+triangulo.perimetro() + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
+            }
+        }
+
+        private void textBox1_KeyDown(object sender, KeyEventArgs e)
+        {
+
         }
     }
 }

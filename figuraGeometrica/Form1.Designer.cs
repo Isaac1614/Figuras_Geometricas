@@ -95,6 +95,7 @@ namespace figuraGeometrica
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(175, 66);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(243, 226);
@@ -126,6 +127,7 @@ namespace figuraGeometrica
             this.buttonCalcular.TabIndex = 15;
             this.buttonCalcular.Text = "Calcular";
             this.buttonCalcular.UseVisualStyleBackColor = false;
+            this.buttonCalcular.Click += new System.EventHandler(this.buttonCalcular_Click);
             // 
             // buttonLimpiar
             // 
@@ -287,6 +289,7 @@ namespace figuraGeometrica
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(231, 29);
             this.textBox1.TabIndex = 5;
+            this.textBox1.KeyDown += new System.Windows.Forms.KeyEventHandler(this.textBox1_KeyDown);
             // 
             // radioButtonPoligonoI
             // 
@@ -357,7 +360,7 @@ namespace figuraGeometrica
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::figuraGeometrica.Properties.Resources.fondo_hd;
+            this.BackgroundImage = global::figuraGeometrica.Properties.Resources.fondo_hd1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(839, 578);
             this.Controls.Add(this.groupBox1);

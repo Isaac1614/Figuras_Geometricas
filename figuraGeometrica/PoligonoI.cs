@@ -6,173 +6,179 @@ using System.Threading.Tasks;
 
 namespace figuraGeometrica
 {
-    class PoligonoI
+    abstract class PoligonoI
     {
-        /*private float lado1;
-        public PoligonoI(float lado1)
+        private float lado1;
+        public float Lado1
         {
-            Lado1=lado1;
+            set //poner valor
+            {
+                //pregunta si el lado <0
+                if (value < 0)
+                {
+                    lado1 = 0; //manda el valor a 0
+                } //NO EXISTEN LADOS NEGATIVOS
+                else
+                {
+                    lado1 = value;
+                    //value es el valor del textbox
+                }
+            }
+            get //obtener el valor
+            {
+                return lado1; //regresa o cacha el valor de la variable lado1
+            }
+        }
+        public abstract float area();
+        public abstract float perimetro();
+        public abstract float volumen();       
+    }
+    class Rombo : PoligonoI
+    {
+        private float diagonalmen;
+        private float diagonalmay;
+        public float Diagonalmen
+        {
+            //modificado para poner el valor en la caja de memoria 
+            set //obtener valor
+            {
+                //pregunta si el lado es menor a cero
+                if (value < 0)
+                {
+                    diagonalmen = 0;
+                }//no existen lado negativos
+                else
+                {
+                    diagonalmen = value;
+                }
+            }
+            get
+            {
+                return diagonalmen;//ingresa el valor en de la variable lado1
+            }
+        }
+        public float Diagonalmay
+        {
+            //modificado para poner el valor en la caja de memoria 
+            set //obtener valor
+            {
+                //pregunta si el lado es menor a cero
+                if (value < 0)
+                {
+                    diagonalmay = 0;
+                }//no existen lado negativos
+                else
+                {
+                    diagonalmay = value;
+                }
+            }
+            get
+            {
+                return diagonalmay;//ingresa el valor en de la variable lado1
+            }
+        }
+        public Rombo(float lado1, float diagonalMen, float diagonalMay)
+        {
+            this.Diagonalmay = diagonalMay;
+            this.Diagonalmen = diagonalMen;
+            this.Lado1 = lado1;
         }
         public override float area()
         {
-            throw new NotImplementedException();
+            return (diagonalmen * diagonalmay) / 2;
         }
         public override float perimetro()
         {
-            throw new NotImplementedException();
+            return Lado1 * 4;
         }
         public override float volumen()
         {
             throw new NotImplementedException();
         }
-        class Rombo : PoligonoI
+    }
+    class trapecio : PoligonoI
+    {
+        private float base1;
+        private float base2;
+        private float altura;
+        public float Base1
         {
-            private float diagonalMen;
-            private float diagonalMay;
-            public float DiagonalMen
+            //modificado para poner el valor en la caja de memoria 
+            set //obtener valor
             {
-                //modificado para poner el valor en la caja de memoria 
-                set //obtener valor
+                //pregunta si el lado es menor a cero
+                if (value < 0)
                 {
-                    //pregunta si el lado es menor a cero
-                    if (value < 0)
-                    {
-                        diagonalMen = 0;
-                    }//no existen lado negativos
-                    else
-                    {
-                        diagonalMen = value;
-                    }
-                }
-                get
+                    base1 = 0;
+                }//no existen lado negativos
+                else
                 {
-                    return diagonalMen;//ingresa el valor en de la variable lado1
+                    base1 = value;
                 }
             }
-            public float DiagonalMay
+            get
             {
-                //modificado para poner el valor en la caja de memoria 
-                set //obtener valor
-                {
-                    //pregunta si el lado es menor a cero
-                    if (value < 0)
-                    {
-                        diagonalMay = 0;
-                    }//no existen lado negativos
-                    else
-                    {
-                        diagonalMay = value;
-                    }
-                }
-                get
-                {
-                    return diagonalMay;//ingresa el valor en de la variable lado1
-                }
-            }
-            public Rombo(float Lado1, float diagonalMen, float diagonalMay)
-            {
-                this.DiagonalMay = diagonalMay;
-                this.DiagonalMen = diagonalMen;
-                this.Lado1 = lado1;
-            }
-            public override float area()
-            {
-                return (diagonalMen * diagonalMay) / 2;
-            }
-            public override float perimetro()
-            {
-                return lado1 * 4;
-            }
-            public override float volumen()
-            {
-                return base.volumen();
+                return base1;//ingresa el valor en de la variable lado1
             }
         }
-        class trapecio : PoligonoI
+        public float Base2
         {
-            private float base1;
-            private float base2;
-            private float altura;
-            public float Base1
+            //modificado para poner el valor en la caja de memoria 
+            set //obtener valor
             {
-                //modificado para poner el valor en la caja de memoria 
-                set //obtener valor
+                //pregunta si el lado es menor a cero
+                if (value < 0)
                 {
-                    //pregunta si el lado es menor a cero
-                    if (value < 0)
-                    {
-                        base1 = 0;
-                    }//no existen lado negativos
-                    else
-                    {
-                        base1 = value;
-                    }
-                }
-                get
+                    base2 = 0;
+                }//no existen lado negativos
+                else
                 {
-                    return base1;//ingresa el valor en de la variable lado1
+                    base2 = value;
                 }
             }
-            public float Base2
+            get
             {
-                //modificado para poner el valor en la caja de memoria 
-                set //obtener valor
-                {
-                    //pregunta si el lado es menor a cero
-                    if (value < 0)
-                    {
-                        base2 = 0;
-                    }//no existen lado negativos
-                    else
-                    {
-                        base2 = value;
-                    }
-                }
-                get
-                {
-                    return base2;//ingresa el valor en de la variable lado1
-                }
+                return base2;//ingresa el valor en de la variable lado1
             }
-            public float Altura
+        }
+        public float Altura
+        {
+            //modificado para poner el valor en la caja de memoria 
+            set //obtener valor
             {
-                //modificado para poner el valor en la caja de memoria 
-                set //obtener valor
+                //pregunta si el lado es menor a cero
+                if (value < 0)
                 {
-                    //pregunta si el lado es menor a cero
-                    if (value < 0)
-                    {
-                        altura = 0;
-                    }//no existen lado negativos
-                    else
-                    {
-                        altura = value;
-                    }
-                }
-                get
+                    altura = 0;
+                }//no existen lado negativos
+                else
                 {
-                    return altura;//ingresa el valor en de la variable lado1
+                    altura = value;
                 }
             }
-            public trapecio(float Lado1, float base1, float base2,float altura)
+            get
             {
-                this.Base1 = base1;
-                this.Base2 = base2;
-                this.Altura = altura;
-                this.Lado1 = lado1;
+                return altura;//ingresa el valor en de la variable lado1
             }
-            public override float area()
-            {
-                return ((Base1 + Base2)+Altura) / 2;
-            }
-            public override float perimetro()
-            {
-                return 2*Lado1*Base1*Base2;
-            }
-            public override float volumen()
-            {
-                return base.volumen();
-            }
-        }*/
-       
+        }
+        public trapecio(float Lado1, float base1, float base2, float altura)
+        {
+            this.Base1 = base1;
+            this.Base2 = base2;
+            this.Altura = altura;
+            this.Lado1 = Lado1;
+        }
+        public override float area()
+        {
+            return ((Base1 + Base2) + Altura) / 2;
+        }
+        public override float perimetro()
+        {
+            return 2 * Lado1 * Base1 * Base2;
+        }
+        public override float volumen()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
