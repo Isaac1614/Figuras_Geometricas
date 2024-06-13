@@ -86,15 +86,17 @@ namespace figuraGeometrica
             // label2
             // 
             this.label2.Font = new System.Drawing.Font("Impact", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(85, 324);
+            this.label2.Location = new System.Drawing.Point(23, 324);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(333, 34);
+            this.label2.Size = new System.Drawing.Size(395, 34);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Ingrese un lado de la figura";
+            this.label2.Text = "Ingrese un lado, radio de la figura";
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pictureBox1.Enabled = false;
             this.pictureBox1.ErrorImage = null;
             this.pictureBox1.Location = new System.Drawing.Point(175, 66);
             this.pictureBox1.Name = "pictureBox1";
@@ -152,9 +154,9 @@ namespace figuraGeometrica
             this.radioButtonEsfera.AutoSize = true;
             this.radioButtonEsfera.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonEsfera.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonEsfera.Location = new System.Drawing.Point(30, 272);
+            this.radioButtonEsfera.Location = new System.Drawing.Point(31, 144);
             this.radioButtonEsfera.Name = "radioButtonEsfera";
-            this.radioButtonEsfera.Size = new System.Drawing.Size(64, 20);
+            this.radioButtonEsfera.Size = new System.Drawing.Size(65, 20);
             this.radioButtonEsfera.TabIndex = 13;
             this.radioButtonEsfera.Text = "Esfera";
             this.radioButtonEsfera.UseVisualStyleBackColor = true;
@@ -165,9 +167,9 @@ namespace figuraGeometrica
             this.radioButtonPrisma.AutoSize = true;
             this.radioButtonPrisma.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonPrisma.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonPrisma.Location = new System.Drawing.Point(30, 248);
+            this.radioButtonPrisma.Location = new System.Drawing.Point(29, 222);
             this.radioButtonPrisma.Name = "radioButtonPrisma";
-            this.radioButtonPrisma.Size = new System.Drawing.Size(67, 20);
+            this.radioButtonPrisma.Size = new System.Drawing.Size(68, 20);
             this.radioButtonPrisma.TabIndex = 12;
             this.radioButtonPrisma.Text = "Prisma";
             this.radioButtonPrisma.UseVisualStyleBackColor = true;
@@ -178,9 +180,9 @@ namespace figuraGeometrica
             this.radioButtonCubo.AutoSize = true;
             this.radioButtonCubo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonCubo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonCubo.Location = new System.Drawing.Point(30, 222);
+            this.radioButtonCubo.Location = new System.Drawing.Point(31, 118);
             this.radioButtonCubo.Name = "radioButtonCubo";
-            this.radioButtonCubo.Size = new System.Drawing.Size(57, 20);
+            this.radioButtonCubo.Size = new System.Drawing.Size(58, 20);
             this.radioButtonCubo.TabIndex = 11;
             this.radioButtonCubo.Text = "Cubo";
             this.radioButtonCubo.UseVisualStyleBackColor = true;
@@ -191,9 +193,9 @@ namespace figuraGeometrica
             this.radioButtonCirculo.AutoSize = true;
             this.radioButtonCirculo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonCirculo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonCirculo.Location = new System.Drawing.Point(30, 196);
+            this.radioButtonCirculo.Location = new System.Drawing.Point(31, 66);
             this.radioButtonCirculo.Name = "radioButtonCirculo";
-            this.radioButtonCirculo.Size = new System.Drawing.Size(66, 20);
+            this.radioButtonCirculo.Size = new System.Drawing.Size(67, 20);
             this.radioButtonCirculo.TabIndex = 10;
             this.radioButtonCirculo.Text = "Círculo";
             this.radioButtonCirculo.UseVisualStyleBackColor = true;
@@ -296,9 +298,9 @@ namespace figuraGeometrica
             this.radioButtonPoligonoI.AutoSize = true;
             this.radioButtonPoligonoI.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonPoligonoI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonPoligonoI.Location = new System.Drawing.Point(30, 170);
+            this.radioButtonPoligonoI.Location = new System.Drawing.Point(29, 170);
             this.radioButtonPoligonoI.Name = "radioButtonPoligonoI";
-            this.radioButtonPoligonoI.Size = new System.Drawing.Size(131, 20);
+            this.radioButtonPoligonoI.Size = new System.Drawing.Size(132, 20);
             this.radioButtonPoligonoI.TabIndex = 4;
             this.radioButtonPoligonoI.Text = "Poligono irregular";
             this.radioButtonPoligonoI.UseVisualStyleBackColor = true;
@@ -309,9 +311,9 @@ namespace figuraGeometrica
             this.radioButtonPoligonoR.AutoSize = true;
             this.radioButtonPoligonoR.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonPoligonoR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonPoligonoR.Location = new System.Drawing.Point(30, 144);
+            this.radioButtonPoligonoR.Location = new System.Drawing.Point(29, 196);
             this.radioButtonPoligonoR.Name = "radioButtonPoligonoR";
-            this.radioButtonPoligonoR.Size = new System.Drawing.Size(124, 20);
+            this.radioButtonPoligonoR.Size = new System.Drawing.Size(125, 20);
             this.radioButtonPoligonoR.TabIndex = 3;
             this.radioButtonPoligonoR.Text = "Poligono regular";
             this.radioButtonPoligonoR.UseVisualStyleBackColor = true;
@@ -322,9 +324,9 @@ namespace figuraGeometrica
             this.radioButtonRectangulo.AutoSize = true;
             this.radioButtonRectangulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonRectangulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonRectangulo.Location = new System.Drawing.Point(30, 118);
+            this.radioButtonRectangulo.Location = new System.Drawing.Point(29, 246);
             this.radioButtonRectangulo.Name = "radioButtonRectangulo";
-            this.radioButtonRectangulo.Size = new System.Drawing.Size(94, 20);
+            this.radioButtonRectangulo.Size = new System.Drawing.Size(95, 20);
             this.radioButtonRectangulo.TabIndex = 2;
             this.radioButtonRectangulo.Text = "Rectángulo";
             this.radioButtonRectangulo.UseVisualStyleBackColor = true;
@@ -335,9 +337,9 @@ namespace figuraGeometrica
             this.radioButtonTriangulo.AutoSize = true;
             this.radioButtonTriangulo.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonTriangulo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonTriangulo.Location = new System.Drawing.Point(30, 92);
+            this.radioButtonTriangulo.Location = new System.Drawing.Point(29, 273);
             this.radioButtonTriangulo.Name = "radioButtonTriangulo";
-            this.radioButtonTriangulo.Size = new System.Drawing.Size(82, 20);
+            this.radioButtonTriangulo.Size = new System.Drawing.Size(83, 20);
             this.radioButtonTriangulo.TabIndex = 1;
             this.radioButtonTriangulo.Text = "Triángulo";
             this.radioButtonTriangulo.UseVisualStyleBackColor = true;
@@ -348,9 +350,9 @@ namespace figuraGeometrica
             this.radioButtonCuadrado.AutoSize = true;
             this.radioButtonCuadrado.Cursor = System.Windows.Forms.Cursors.Hand;
             this.radioButtonCuadrado.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButtonCuadrado.Location = new System.Drawing.Point(30, 66);
+            this.radioButtonCuadrado.Location = new System.Drawing.Point(30, 92);
             this.radioButtonCuadrado.Name = "radioButtonCuadrado";
-            this.radioButtonCuadrado.Size = new System.Drawing.Size(85, 20);
+            this.radioButtonCuadrado.Size = new System.Drawing.Size(86, 20);
             this.radioButtonCuadrado.TabIndex = 0;
             this.radioButtonCuadrado.Text = "Cuadrado";
             this.radioButtonCuadrado.UseVisualStyleBackColor = true;

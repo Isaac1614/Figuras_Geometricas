@@ -18,3 +18,13 @@ C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\D
 C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.exe.config
 C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.exe
 C:\Users\arsek\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.pdb
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.exe.config
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.exe
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\bin\Debug\figuraGeometrica.pdb
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.csproj.AssemblyReference.cache
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.Form1.resources
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.Properties.Resources.resources
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.csproj.GenerateResource.cache
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.csproj.CoreCompileInputs.cache
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.exe
+C:\Users\Licenciaturas\Source\Repos\Isaac1614\Figuras_Geometricas\figuraGeometrica\obj\Debug\figuraGeometrica.pdb

@@ -25,6 +25,7 @@ namespace figuraGeometrica
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
             pictureBox1.Image = (figuraGeometrica.Properties.Resources.predeterminado);
         }
 
@@ -85,10 +86,12 @@ namespace figuraGeometrica
 
         private void buttonDibujar_Click(object sender, EventArgs e)
         {
+            
             if (radioButtonCirculo.Checked)
             {
+                //pictureBox1.BackgroundImageLayout = ImageLayout.Stretch;
                 pictureBox1.Image = (figuraGeometrica.Properties.Resources.circulo);
-                //pictureBox1.BackgroundImageLayout = ImageLayout.Center;
+                
             }
             else if (radioButtonCuadrado.Checked)
             {
@@ -216,11 +219,11 @@ namespace figuraGeometrica
             }
             else if (radioButtonPoligonoI.Checked)
             {
-                pictureBox1.Image = (figuraGeometrica.Properties.Resources.trapecio);
+                MessageBox.Show("Datos guardados " + "\n" + "El lado es: " + textBox1.Text, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (radioButtonPoligonoR.Checked)
             {
-                pictureBox1.Image = (figuraGeometrica.Properties.Resources.poligonoregular);
+                MessageBox.Show("Datos guardados " + "\n" + "El lado es: " + textBox1.Text, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else if (radioButtonPrisma.Checked)
             {
@@ -239,8 +242,6 @@ namespace figuraGeometrica
         
         private void buttonCalcular_Click(object sender, EventArgs e)
         {
-            
-            
             if (radioButtonCirculo.Checked)
             {
                 float rad1 = float.Parse(textBox1.Text);
