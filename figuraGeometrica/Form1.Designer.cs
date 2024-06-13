@@ -362,7 +362,7 @@ namespace figuraGeometrica
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::figuraGeometrica.Properties.Resources.fondo_hd1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(839, 578);
+            this.ClientSize = new System.Drawing.Size(839, 598);
             this.Controls.Add(this.groupBox1);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

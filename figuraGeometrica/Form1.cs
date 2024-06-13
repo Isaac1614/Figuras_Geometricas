@@ -160,7 +160,7 @@ namespace figuraGeometrica
         {
             if (radioButtonCirculo.Checked)
             {
-                infoText.Text = "Figura seleccionada: Circulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+                infoText.Text = "Figura seleccionada: Circulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del radio: " + textBox1.Text;
             }
             else if (radioButtonCuadrado.Checked)
             {
@@ -172,7 +172,7 @@ namespace figuraGeometrica
             }
             else if (radioButtonEsfera.Checked)
             {
-                infoText.Text = "Figura seleccionada: Esfera, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+                infoText.Text = "Figura seleccionada: Esfera, " + "\n" + "Sus datos son:" + "\n" + "Longitud del radio: " + textBox1.Text;
             }
             else if (radioButtonPoligonoI.Checked)
             {
@@ -184,25 +184,63 @@ namespace figuraGeometrica
             }
             else if (radioButtonPrisma.Checked)
             {
-                infoText.Text = "Figura seleccionada: Prisma, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+                infoText.Text = "Figura seleccionada: Prisma, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado 1: " + textBox1.Text;
             }
             else if (radioButtonRectangulo.Checked)
             {
-                infoText.Text = "Figura seleccionada: Rectangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+                infoText.Text = "Figura seleccionada: Rectangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud de la base: " + textBox1.Text + "\n" + "Longitud de la altura: " + textBox1.Text;
             }
             else if (radioButtonTriangulo.Checked)
             {
-                infoText.Text = "Figura seleccionada: Triangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+                infoText.Text = "Figura seleccionada: Triangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud de la base: " + textBox1.Text + "\n" + "Longitud de la altura: " + textBox1.Text;
             }
         }
 
         private void buttonGuardar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Datos guardados "+ textBox1.Text,"Guardar",MessageBoxButtons.OK,MessageBoxIcon.Information);
+            if (radioButtonCirculo.Checked)
+            {
+                MessageBox.Show("Datos guardados "+ "\n"+ "El radio es: " + textBox1.Text, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (radioButtonCuadrado.Checked)
+            {
+                MessageBox.Show("Datos guardados " + "\n" + "El lado es: " + textBox1.Text, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (radioButtonCubo.Checked)
+            {
+                MessageBox.Show("Datos guardados " + "\n" + "El lado es: " + textBox1.Text, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (radioButtonEsfera.Checked)
+            {
+                MessageBox.Show("Datos guardados " + "\n" + "El radio es: " + textBox1.Text, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (radioButtonPoligonoI.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.trapecio);
+            }
+            else if (radioButtonPoligonoR.Checked)
+            {
+                pictureBox1.Image = (figuraGeometrica.Properties.Resources.poligonoregular);
+            }
+            else if (radioButtonPrisma.Checked)
+            {
+                MessageBox.Show("Datos guardados " + "\n" + "El lado es: " + textBox1.Text, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (radioButtonRectangulo.Checked)
+            {
+                MessageBox.Show("Datos guardados " + "\n" + "La base es: " + textBox1.Text + "\n" + "La altura es: " + textBox1.Text, "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else if (radioButtonTriangulo.Checked)
+            {
+                MessageBox.Show("Datos guardados " + "\n" + "La base es: " + "\n" + "La altura es: " , "Guardar", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            
         }
-
+        
         private void buttonCalcular_Click(object sender, EventArgs e)
         {
+            
+            
             if (radioButtonCirculo.Checked)
             {
                 float rad1 = float.Parse(textBox1.Text);
@@ -225,7 +263,7 @@ namespace figuraGeometrica
             {
                 float rad1 = float.Parse(textBox1.Text);
                 Esfera esfera = new Esfera(rad1);
-                infoText.Text = infoText.Text+ "\n" + "Area = " +esfera.area()+ "\n" + "Perimetro = Noaplica " + "\n" + "Volumen= "+ esfera.volumen() + "\n";
+                infoText.Text = infoText.Text+ "\n" + "Area = " +esfera.area()+ "\n" + "Perimetro = No aplica " + "\n" + "Volumen= "+ esfera.volumen() + "\n";
             }
             else if (radioButtonPoligonoI.Checked)
             {
@@ -233,6 +271,10 @@ namespace figuraGeometrica
             }
             else if (radioButtonPoligonoR.Checked)
             {
+                float apotema = float.Parse(textBox1.Text);
+                float numLado = float.Parse(textBox1.Text);
+                float lad1 = float.Parse(textBox1.Text);
+                PoligonoR poligonoR = new PoligonoR(lad1,apotema,numLado);
                 infoText.Text = infoText.Text + "\n" + "Area= " + "\n" + "Perimetro= " + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
             }
             else if (radioButtonPrisma.Checked)
@@ -254,7 +296,7 @@ namespace figuraGeometrica
             {
                 float alt1 = float.Parse(textBox1.Text);
                 float bas1 = float.Parse(textBox1.Text);
-                Triangulo triangulo = new Triangulo(bas1, alt1);
+                Triangulo triangulo = new Triangulo(bas1, alt1);                
                 infoText.Text = infoText.Text + "\n" + "Area = "+ triangulo.area() + "\n" + "Perimetro = "+triangulo.perimetro() + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
             }
         }
