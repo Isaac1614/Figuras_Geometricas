@@ -163,39 +163,39 @@ namespace figuraGeometrica
         {
             if (radioButtonCirculo.Checked)
             {
-                infoText.Text = "Figura seleccionada: Circulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del radio: " + textBox1.Text;
+                infoText.Text = infoText+ "Figura seleccionada: Circulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del radio: " + textBox1.Text;
             }
             else if (radioButtonCuadrado.Checked)
             {
-                infoText.Text = "Figura seleccionada: Cuadrado, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: "+ textBox1.Text;
+                infoText.Text = infoText + "Figura seleccionada: Cuadrado, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: "+ textBox1.Text;
             }
             else if (radioButtonCubo.Checked)
             {
-                infoText.Text = "Figura seleccionada: Cubo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+                infoText.Text = infoText + "Figura seleccionada: Cubo, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
             }
             else if (radioButtonEsfera.Checked)
             {
-                infoText.Text = "Figura seleccionada: Esfera, " + "\n" + "Sus datos son:" + "\n" + "Longitud del radio: " + textBox1.Text;
+                infoText.Text = infoText + "Figura seleccionada: Esfera, " + "\n" + "Sus datos son:" + "\n" + "Longitud del radio: " + textBox1.Text;
             }
             else if (radioButtonPoligonoI.Checked)
             {
-                infoText.Text = "Figura seleccionada: Poligono Irregular, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+                infoText.Text = infoText + "Figura seleccionada: Poligono Irregular, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
             }
             else if (radioButtonPoligonoR.Checked)
             {
-                infoText.Text = "Figura seleccionada: Poligono Regular, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
+                infoText.Text = infoText + "Figura seleccionada: Poligono Regular, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado: " + textBox1.Text;
             }
             else if (radioButtonPrisma.Checked)
             {
-                infoText.Text = "Figura seleccionada: Prisma, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado 1: " + textBox1.Text;
+                infoText.Text = infoText + "Figura seleccionada: Prisma, " + "\n" + "Sus datos son:" + "\n" + "Longitud del lado 1: " + textBox1.Text;
             }
             else if (radioButtonRectangulo.Checked)
             {
-                infoText.Text = "Figura seleccionada: Rectangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud de la base: " + textBox1.Text + "\n" + "Longitud de la altura: " + textBox1.Text;
+                infoText.Text = infoText + "Figura seleccionada: Rectangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud de la base: " + textBox1.Text + "\n" + "Longitud de la altura: " + textBox1.Text;
             }
             else if (radioButtonTriangulo.Checked)
             {
-                infoText.Text = "Figura seleccionada: Triangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud de la base: " + textBox1.Text + "\n" + "Longitud de la altura: " + textBox1.Text;
+                infoText.Text = infoText + "Figura seleccionada: Triangulo, " + "\n" + "Sus datos son:" + "\n" + "Longitud de la base: " + textBox1.Text + "\n" + "Longitud de la altura: " + textBox1.Text;
             }
         }
 
@@ -295,9 +295,15 @@ namespace figuraGeometrica
             }
             else if (radioButtonTriangulo.Checked)
             {
-                float alt1 = float.Parse(textBox1.Text);
-                float bas1 = float.Parse(textBox1.Text);
-                Triangulo triangulo = new Triangulo(bas1, alt1);                
+                string datafig = textBox1.Text;
+                string[] valores =datafig.Split(',');
+                string bas, alt;
+                bas = valores[0];
+                alt = valores[1];
+                //altura = valores[2];
+                float bas1 = Convert.ToSingle(bas);
+                float alt1 = Convert.ToSingle(alt);
+                Triangulo triangulo = new Triangulo(bas1,alt1);                
                 infoText.Text = infoText.Text + "\n" + "Area = "+ triangulo.area() + "\n" + "Perimetro = "+triangulo.perimetro() + "\n" + "Volumen, no se calcula en figuras planas " + "\n";
             }
         }
